@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <script type="text/javascript" src=".js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <canvas id="myChart"></canvas>
+    </div>
+
+    <script>
+      let myChart = document.getElementById('myChart').getContext('2d');
+
+      // Global Options
+      Chart.defaults.global.defaultFontFamily = 'Lato';
+      Chart.defaults.global.defaultFontSize = 10;
+      Chart.defaults.global.defaultFontColor = '#777';
+
+      let massPopChart = new Chart(myChart, {
+        type: 'pie',
+    data: {
+        datasets: [{
+            label: 'Voedselvoorraad',
+            data: [65, 10],
+            backgroundColor: ['#2DCE98', 'white'],
+            hoverBackgroundColor: '#2DCE98',
+            borderWidth: 0,
+        }],
+        },
+        options:{
+          aspectRatio: 1, //pas deze aan voor de verhouding
+          cutoutPercentage: 90,
+          responsive: true,
+          title:{
+            display:false
+          },
+          label:{
+            display:false
+          },
+          legend:{
+            display:false,
+          },
+          tooltips:{
+            enabled:false,
+          },
+          scales: {
+            xAxes: [{
+              display: false,
+            }],
+            yAxes: [{
+              display: false,
+            }]
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

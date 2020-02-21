@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Dasboard - Algemeen</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/12eab69bfc.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+  </head>
+  <body>
+    <!-- SECTION-MENU -->
+    <section class="container">
+      <header class="section-menu">
+        <div class="top-section">
+          <img id="hamburgermenu" src="img/menubar-white.png" alt="">
+          <img id="logo" src="img/spacex3.png" alt="">
+          <div class="menu-icons">
+            <i class="far fa-bell fa-lg"></i>
+            <i class="far fa-question-circle fa-lg"></i>
+          </div>
+        </div>
+        <div class="search-bar">
+          <img id="search-icon" src="img/search-icon.png" alt="">
+        </div>
+        <h1>Dashboard - Algemeen</h1>
+      </header> <!--einde section-menu/ header-->
+
+      <!-- SECTION-ONE -->
+      <main>
+        <section class="section-one">
+          <div class="statistieken">
+            <div class="stat1">
+              <span class="statTitels">SEC. TOT LANCERING</span>
+              <p class="statNumbers" id="demo"></p>
+            </div>
+            <div class="stat2">
+              <span class="statTitels">TEMP. OP MARS</span>
+              <p class="statNumbers">-60°C</p>
+            </div>
+            <div class="stat3">
+              <span class="statTitels">AFST. TOT MARS</span>
+              <p class="statNumbers">55,8 mjn km</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION-TWO -->
+        <section class="section-two">
+          <div class="graphs">
+            <div class="graph-top">
+              <div class="graph-top-title">
+                <span class="title1">Voertuig informatie</span><br />
+                <span class="title2">Cabinetemperatuur (°C)</span>
+              </div>
+              <div class="graph-top-btn">
+                <a class="graph-btn" type="button" name="button">°C</a>
+                <a class="graph-btn" type="button" name="button">°F</a>
+              </div>
+            </div>
+            <!-- grafiek -->
+            <canvas id="myLineChart"></canvas>
+            <script type="text/javascript" src="index.js"></script>
+          </div>
+        </section>
+
+        <!-- SECTION-THREE -->
+        <section class="section-three">
+          <div class="graphs">
+            <div class="graph-top">
+              <div class="graph-top-title">
+                <span class="title1">Voertuig informatie</span><br />
+                <span class="title2">Hoeveelheid brandstof (L)</span>
+              </div>
+            </div>
+            <!-- grafiek -->
+            <canvas id="myBarChart"></canvas>
+            <script type="text/javascript" src="index.js"></script>
+          </div>
+        </section>
+
+        <!-- SECTION-FOUR -->
+        <section class="section-four">
+          <div class="graphs">
+            <div class="graph-top">
+              <div class="graph-top-title">
+                <span class="title1">Voertuig omgeving</span><br />
+                <span class="title2">Zwaartekracht per planeet</span>
+              </div>
+            </div>
+            <!-- grafiek -->
+            <canvas id="myPieChart"></canvas>
+            <script type="text/javascript" src="index.js"></script>
+              <img class="img-statusbar" align="middle" src="img/statusbar.jpg" alt="" >
+          </div>
+        </section>
+
+        <!-- SECTION-FIVE -->
+        <section class="section-five">
+          <div class="graphs">
+            <div class="graph-top">
+              <div class="graph-top-title">
+                <span class="title1">Voertuig informatie</span><br />
+                <span class="title2">Snelheid ruimtevaartuig <br />(km/uur)</span>
+              </div>
+              <div class="graph-top-btn" id="graph-scatter-btn">
+                <a class="graph-btn scatter-btn" type="button" name="button">kph</a>
+                <a class="graph-btn scatter-btn" type="button" name="button">mph</a>
+              </div>
+            </div>
+            <!-- grafiek -->
+            <canvas id="myScatterChart"></canvas>
+            <script type="text/javascript" src="index.js"></script>
+          </div>
+        </section>
+
+        <!-- SECTION-SIX -->
+        <section class="section-six">
+          <div class="graphs">
+            <div class="graph-top statusGraph">
+              <div class="graph-top-title">
+                <span class="title1">Tools</span><br />
+                <span class="title2">Voedsel- en watervoorraad</span>
+              </div>
+            </div>
+            <!-- grafiek -->
+            <div class="statusbars">
+              <div class="Status">
+                <canvas id="myStatusChartOne"></canvas>
+              </div>
+              <div class="Status">
+                <canvas id="myStatusChartTwo"></canvas>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <p>
+          &copy;2020 - <strong>Joël Timmers</strong><br />
+          <small>In opdracht van de HHS - SpaceX - Challenge 1</small>
+        </p>
+      </footer>
+    </section>
+  </body>
+</html>
