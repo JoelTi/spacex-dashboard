@@ -323,27 +323,19 @@ let massPopChart = new Chart(myScatterChart, {
 
 function countdownDate() {
 // Set the date we're counting down to
-var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
+var countDownDate = new Date("Jan 10, 2021 12:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
-
-  // Get today's date and time
   var now = new Date().getTime();
-
-  // Find the distance between now and the count down date
   var distance = countDownDate - now;
-
-  // Time calculations for days, hours, minutes and seconds
   var seconds = Math.floor((distance % (1000 * 60 * 60 * 60)) / 1000);
 
-  // Display the result in the element with id="demo"
   document.getElementById("demo").innerHTML = seconds + "s ";
 
-  // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+    document.getElementById("demo").innerHTML = "GELANCEERD!";
   }
 }, 1000);
 }
@@ -453,11 +445,11 @@ data: {
 
 
 window.onload = function() {
+  countdownDate();
   myLineChart();
   myBarChart();
   myPieChart();
   myScatterChart();
   myStatusChartOne();
   myStatusChartTwo();
-  countdownDate();
 }

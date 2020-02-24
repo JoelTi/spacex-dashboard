@@ -11,6 +11,7 @@ body {
   height: auto;
 }
 
+
 /*///// ALGEMENE STYLING /////*/
 h1 {
   font-size: 1.3rem;
@@ -22,40 +23,72 @@ h1 {
 main {
   height: auto;
 }
+.charts {
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0px 3px 10px 0.1px rgb(224, 224, 224);
+  padding: 5vw 6.5vw 6.5vw 6.5vw;
+}
+.chartTop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
+.chartBtn {
+  justify-content: flex-end;
+  color: white;
+  padding: 1vw 4.5vw;
+  font-size: 2vw;
+  border-radius: 5px;
+  margin: 0px 0px 5px 0.35vw;
+}
+.chartTopTitleOne {
+  font-size: 2.1vw;
+  color: #4D4F5C;
+  margin-bottom: 0px;
+}
+.chartTopTitleTwo {
+  font-size: 2.8vw;
+  color: #4D4F5C;
+}
 
 
-.container {
+/* grid structuur */
+.grid-container {
   display: grid;
   grid-template-rows: auto auto auto auto auto auto auto auto;
   grid-template-columns: 100%;
   grid-template-areas:
-  "section-menu"
-  "section-one"
-  "section-two"
-  "section-three"
-  "section-four"
-  "section-five"
-  "section-six"
-  "section-footer"
+  "grid-section-menu"
+  "grid-section-one"
+  "grid-section-two"
+  "grid-section-three"
+  "grid-section-four"
+  "grid-section-five"
+  "grid-section-six"
+  "grid-section-footer"
   ;
 }
 
+
 /*///// SECTION-MENU /////*/
-.section-menu {
-  grid-area: section-menu;
+header {
+  grid-area: grid-section-menu;
   background-color: #172B4D;
   height: 225px;
   padding: 0px 30px;
 }
-.top-section {
+header > .top-section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 20px 0px 15px 0px;
 }
 #hamburgermenu {
-  width: 25px;
-  height: 20px;
+  width: 20px;
+  height: 17px;
   padding: 10px 0px 10px 0px;
   color: white;
 }
@@ -70,7 +103,8 @@ main {
   color: white;
   padding: 12px 0px 0px 9px;
 }
-.search-bar {
+/* zoekbar */
+header > .search-bar {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -80,18 +114,19 @@ main {
   background-color: white;
   border-radius: 300px;
 }
-#search-icon {
+.search-bar > #search-icon {
   padding-left: 15px;
   width: 20px;
   color: #172B4D;
 }
 
+
 /*///// SECTION-ONE /////*/
-.section-one {
-  grid-area: section-one;
+.grid-section-one {
+  grid-area: grid-section-one;
   padding: 0px 30px;
 }
-.statistieken {
+.grid-section-one > .statistieken {
   display: flex;
   justify-content: space-around;
   position: relative;
@@ -105,8 +140,7 @@ main {
   box-shadow: 0px 5px 10px 0.1px rgb(224, 224, 224);
   padding: 3vw;
 }
-.stat1, .stat2, .stat3 {
-  /* padding: 5px 25px; */
+.stat {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -126,124 +160,102 @@ main {
   margin-bottom: 0px;
 }
 
+
 /*///// SECTION-TWO /////*/
-.section-two {
-  grid-area: section-two;
+.grid-section-two {
+  grid-area: grid-section-two;
   padding: 0px 30px;
 }
-.graphs {
-  border-radius: 10px;
-  background-color: white;
-  box-shadow: 0px 3px 10px 0.1px rgb(224, 224, 224);
-  padding: 5vw 6.5vw 6.5vw 6.5vw;
-}
-.graph-top {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 50px;
-}
-.title1 {
-  font-size: 2.1vw;
-  color: #4D4F5C;
-  margin-bottom: 0px;
-}
-.title2 {
-  font-size: 2.8vw;
-  color: #4D4F5C;
-}
-.graph-top-btn > a:nth-child(1) {
+#lineChartTopBtnOne {
+  background-color: #7764E4;
+  border: 1px solid #7764E4;
   margin-bottom: 30px;
 }
-.graph-top-btn > a:nth-child(2) {
+#lineChartTopBtnTwo {
   background-color: white;
   color: #7764E4;
+  border: 1px solid #7764E4;
 }
-.graph-top-btn > a:nth-child(2):hover {
+#lineChartTopBtnTwo:hover {
   background-color: #7764E4;
   color: #fff;
   cursor: pointer;
 }
-.graph-btn {
-  justify-content: flex-end;
-  background-color: #7764E4;
-  border: 1px solid #7764E4;
-  color: white;
-  padding: 1vw 4.5vw;
-  font-size: 2vw;
-  border-radius: 5px;
-  margin: 0px 0px 5px 0.35vw;
-}
+
 
 /*///// SECTION-THREE /////*/
-.section-three {
-  grid-area: section-three;
+.grid-section-three {
+  grid-area: grid-section-three;
   padding: 0px 30px;
   margin-top: 30px;
 }
+
 
 /*///// SECTION-FOUR /////*/
-.section-four {
-  grid-area: section-four;
+.grid-section-four {
+  grid-area: grid-section-four;
   padding: 0px 30px;
   margin-top: 30px;
 }
-.section-four > .graphs > .graph-top{
-  margin-bottom: 35px
+.grid-section-four > .charts > .chartTop{
+  margin-bottom: 35px;
 }
-
 .img-statusbar {
   display: block;
   margin: 0 auto;
   margin-top: 30px;
   max-width: 85%;
   height: auto;
-
 }
 
+
 /*///// SECTION-FIVE /////*/
-.section-five {
-  grid-area: section-five;
+.grid-section-five {
+  grid-area: grid-section-five;
   padding: 0px 30px;
   margin-top: 30px;
 }
-#graph-scatter-btn > a:nth-child(2) {
-  color: #F53C56;
-}
-#graph-scatter-btn > a:nth-child(2):hover {
-  background-color: #F53C56;
-  color: white;
-}
-.scatter-btn {
+#scatterChartTopBtnOne {
   background-color: #F53C56;
   border: 1px solid #F53C56;
+  margin-bottom: 30px;
+}
+#scatterChartTopBtnTwo {
+  background-color: white;
+  color: #F53C56;
+  border: 1px solid #F53C56;
+}
+#scatterChartTopBtnTwo:hover {
+  background-color: #F53C56;
+  color: #fff;
+  cursor: pointer;
 }
 
 
 /*///// SECTION-SIX /////*/
-.section-six {
-  grid-area: section-six;
+.grid-section-six {
+  grid-area: grid-section-six;
   padding: 0px 30px;
   margin: 30px 0px;
 }
-.statusbars {
-  display: flex;
-  flex-direction: row;
-   justify-content: space-between;
-   align-items: flex-start;
-  max-width: 100%;
-}
-.Status  {
-  width: 50%;
-}
-.statusGraph {
+#statusChartTop {
   margin-bottom: 20px;
 }
+.statusCharts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.statusChart {
+  width: 50%;
+}
+
 
 /*///// SECTION-FOOTER /////*/
 .footer {
-  grid-area: section-footer;
+  grid-area: grid-section-footer;
   background-color: #172B4D;
 }
 /*///// copyright /////*/
@@ -254,19 +266,10 @@ main {
   font-weight: 200;
   padding: 15px 0px;
   text-align: center;
+  line-height: 1.8em;
 }
 
 
-@media only screen and (min-width: 600px) {
-  .container {
-    grid-template-areas:
-    "section-menu"
-    "section-one"
-    "section-two section-three"
-    "section-four"
-    "section-five"
-    "section-six"
-    "section-footer"
-    ;
-  }
-}
+/* @media only screen and (min-width: 600px) {
+
+} */
