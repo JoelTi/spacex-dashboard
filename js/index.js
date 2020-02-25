@@ -367,7 +367,8 @@ data: {
         display:true,
         position: 'top',
         text: 'Voedselvoorraad',
-        padding: 20,
+        ypadding: 20,
+        ypadding: 0,
         fontSize: 10,
       },
       label:{
@@ -418,7 +419,8 @@ data: {
         display:true,
         position: 'top',
         text: 'Watervoorraad',
-        padding: 20,
+        ypadding: 20,
+        ypadding: 0,
         fontSize: 10,
       },
       label:{
