@@ -61,7 +61,7 @@ main {
   grid-template-rows: auto auto auto auto auto auto auto auto;
   grid-template-columns: 100%;
   grid-template-areas:
-  "grid-section-menu"
+  "grid-section-top"
   "grid-section-one"
   "grid-section-two"
   "grid-section-three"
@@ -72,8 +72,7 @@ main {
   ;
 }
 
-/* MENU BENEDEN */
-
+/*///// MENU /////*/
 nav {
   position: fixed;
   bottom: 0px;
@@ -100,9 +99,9 @@ nav {
   width: 17px;
 }
 
-/*///// SECTION-MENU /////*/
+/*///// SECTION-TOP /////*/
 header {
-  grid-area: grid-section-menu;
+  grid-area: grid-section-top;
   background-color: #172B4D;
   height: 155px;
   padding: 0px 30px;
@@ -113,12 +112,12 @@ header > .top-section {
   justify-content: space-between;
   padding: 20px 0px 15px 0px;
 }
-#hamburgermenu {
+/* #hamburgermenu {
   width: 20px;
   height: 17px;
   padding: 10px 0px 10px 0px;
   color: white;
-}
+} */
 #logo {
   width: 100px;
   height: auto;
@@ -292,7 +291,7 @@ header > .top-section {
   font-size: 12px;
   font-weight: 200;
   padding: 15px 0px;
-  margin-bottom: 60px;
+  margin-bottom: 75px;
   text-align: center;
   line-height: 1.8em;
 }
