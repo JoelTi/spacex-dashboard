@@ -432,6 +432,9 @@ header > .top-section {
     grid-column: 8/13;
     grid-row: 3;
   }
+  .grid-section-three > .charts {
+    height: 87%;
+  }
   .grid-section-four {
     grid-column: 2/13;
     grid-row: 4;
