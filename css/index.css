@@ -19,9 +19,6 @@ h1 {
   font-weight: 400;
   margin-bottom: 25px;
 }
-main {
-  height: auto;
-}
 .charts {
   border-radius: 10px;
   background-color: white;
@@ -37,9 +34,9 @@ main {
 }
 .chartBtn {
   color: white;
-  padding: 1vw 4.5vw;
+  padding: 1.3vw 5vw;
   font-size: 2vw;
-  border-radius: 5px;
+  border-radius: 200px;
   margin: 0px 0px 5px 0.35vw;
 }
 .chartBtns {
@@ -47,8 +44,8 @@ main {
 }
 .chartTopTitleOne {
   font-size: 2.1vw;
-  color: #4D4F5C;
-  margin-bottom: 0px;
+  color: #787b90;
+
 }
 .chartTopTitleTwo {
   font-size: 2.8vw;
@@ -62,6 +59,7 @@ main {
   grid-auto-rows: auto;
   grid-template-columns: repeat(12, 1fr);
 }
+
 
 /*///// MENU /////*/
 nav {
@@ -142,6 +140,7 @@ header > .top-section {
   text-align: center;
   padding-top: 0px;
   margin: 7px 0px;
+
   max-width: 33.33%;
 }
 .statTitels {
@@ -155,6 +154,10 @@ header > .top-section {
   margin-bottom: 0px;
 }
 
+/*///// SECTION-ONE TABLET /////*/
+.statistiekenTablet {
+  display: none;
+}
 
 /*///// SECTION-TWO /////*/
 .grid-section-two {
@@ -352,8 +355,66 @@ header > .top-section {
   .statusChart:last-child {
     margin-top: 60px;
   }
+
+  .grid-section-one > .statistieken {
+    padding: 0.5vw;
+  }
+  .statTitels {
+    font-size: 1.5vw;
+  }
+  .statNumbers {
+    font-size: 2.5vw;
+  }
 }
 
-@media only screen and (min-width: 720px) {
+@media only screen and (min-width: 1000px) {
+  .grid-section-one > .statistieken {
+    display: none;
+  }
+  .statistiekenTablet {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+  }
+  .statTablet {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    top: -32px;
+    padding-top: 0px;
+    margin: 0px;
+    width: 33.33%;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 5px 10px 0.1px rgb(224, 224, 224);
+    padding: 2vw;
+  }
+  .statTablet:nth-child(2) {
+    margin: 0px 30px;
+  }
+  .statTablet > img {
+    width: 65px;
+    align-self: center;
+  }
+  .statTablet > div > .statNumbers {
+    text-align: left;
+    font-size: 2vw;
+  }
+  .statTablet > div > .statTitels {
+    text-align: left;
+    font-size: 1.3vw;
+  }
 
-)
+  .chartTopTitleOne {
+    font-size: 1.2vw;
+  }
+  .chartTopTitleTwo {
+    font-size: 1.8vw;
+    padding-top: 10px;
+    display: block;
+  }
+}
