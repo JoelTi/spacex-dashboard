@@ -381,10 +381,13 @@ header > .top-section {
   .footer > p {
     margin-bottom: 0px;
   }
+  .grid-container {
+    grid-template-columns: 55px auto auto auto auto auto auto auto;
+  }
   .tabletNav {
     display: block;
     grid-column: 1/2;
-    grid-row: 1/6;
+    grid-row: 1/7;
     background-color: white;
   }
   .tabletNavItems {
@@ -402,18 +405,19 @@ header > .top-section {
   }
   .tableticon {
     display: block;
-    width: 22px;
+    margin: 0 auto;
+    width: 16px;
     margin-bottom: 30px;
   }
   .tableticon:last-child {
-    width: 24px;
+    width: 18.5px;
   }
   .tableticon:nth-child(7) {
     margin-bottom: 65px;
   }
   #tabletMenuIcon {
     margin-bottom: 50px;
-    width: 21px;
+    width: 16.5px;
   }
 
   header {
@@ -433,7 +437,7 @@ header > .top-section {
     grid-row: 3;
   }
   .grid-section-three > .charts {
-    height: 87%;
+    height: 88.5%;
   }
   .grid-section-four {
     grid-column: 2/13;
@@ -447,7 +451,14 @@ header > .top-section {
     grid-column: 10/13;
     grid-row: 5;
   }
-
+  .grid-section-six > .charts > .statusCharts{
+    width: 78%;
+    }
+  .footer {
+    grid-column: 2/13;
+    grid-row: 6;
+    background-color: #172B4D;
+  }
 }
 
 @media only screen and (min-width: 920px) {
@@ -501,3 +512,10 @@ header > .top-section {
     display: block;
   }
 }
+
+/*
+@media only screen and (min-width: 1200px) {
+  .grid-container {
+    grid-template-columns: 200px auto auto auto auto auto auto auto;
+  }
+} */
