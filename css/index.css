@@ -45,11 +45,18 @@ h1 {
 .chartTopTitleOne {
   font-size: 2.1vw;
   color: #787b90;
-
 }
 .chartTopTitleTwo {
   font-size: 2.8vw;
   color: #4D4F5C;
+}
+.chartInfo {
+  font-size: 10px;
+  margin-top: 30px;
+  line-height: 1.8em;
+}
+.chartInfo > i {
+  margin-right: 5px;
 }
 
 
@@ -187,6 +194,9 @@ header > .top-section {
   color: #fff;
   cursor: pointer;
 }
+#lineChartInfo > i {
+  color: #7764E4;
+}
 
 
 /*///// SECTION-THREE /////*/
@@ -241,6 +251,9 @@ header > .top-section {
   color: #fff;
   cursor: pointer;
 }
+#scatterChartInfo > i {
+  color: #F53C56;
+}
 
 
 /*///// SECTION-SIX /////*/
@@ -262,6 +275,9 @@ header > .top-section {
 }
 .statusChart {
   width: 50%;
+}
+#statusChartInfo > i {
+  color: #11CDEF;
 }
 
 

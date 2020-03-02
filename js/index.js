@@ -13,15 +13,15 @@ let massPopChart = new Chart(myLineChart, {
     labels:['0', '10', '20', '30', '40', '50', '60'],
     datasets:[{
       data:[
-        15.2,
+        12.2,
         24.7,
         16.8,
-        23.9,
+        33.9,
         24.2,
         34.0,
         37.5
       ],
-      backgroundColor:'rgba(0,0,0,0)',
+      backgroundColor:'rgba(119, 100, 228, 0.15)',
       pointBackgroundColor: 'white',
       pointHoverRadius: 5,
       pointHoverBackgroundColor: '#7764E4',
@@ -380,7 +380,7 @@ data: {
     },
     options:{
       aspectRatio: 1, //pas deze aan voor de verhouding
-      cutoutPercentage: 90,
+      cutoutPercentage: 87,
       responsive: true,
       title:{
         display:true,
@@ -432,7 +432,7 @@ data: {
     },
     options:{
       aspectRatio: 1, //pas deze aan voor de verhouding
-      cutoutPercentage: 90,
+      cutoutPercentage: 87,
       responsive: true,
       title:{
         display:true,
