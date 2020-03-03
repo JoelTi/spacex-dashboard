@@ -12,7 +12,7 @@ body {
 }
 
 
-/*///// ALGEMENE STYLING /////*/
+/*///// ALGEMENE STYLING GENERIEKE ELEMENTEN /////*/
 h1 {
   font-size: 1.3rem;
   color: white;
@@ -54,13 +54,14 @@ h1 {
   font-size: 10px;
   margin-top: 30px;
   line-height: 1.8em;
+  color: #787b90;
 }
 .chartInfo > i {
   margin-right: 5px;
 }
 
 
-/* grid structuur */
+/*///// GRID STRUCTUUR /////*/
 .grid-container {
   display: grid;
   grid-auto-rows: auto;
@@ -68,7 +69,7 @@ h1 {
 }
 
 
-/*///// MENU /////*/
+/*///// FIXED MOBIELE MENU /////*/
 .mobileNav {
   position: fixed;
   bottom: 0px;
@@ -85,7 +86,10 @@ h1 {
   padding: 0px 30px;
   background-color: #F1F3F9;
 }
-.navItem > img {
+.navItem > figure {
+  margin: 0px;
+}
+.navItem > figure > img {
   width: 20px;
 }
 #icon {
@@ -94,10 +98,8 @@ h1 {
 #icon1, #icon4 {
   width: 17px;
 }
-#Tableticon1 {
-  display: none;
-}
 
+/* tavlet navigatie, zichtbaar vanaf 720px */
 .tabletNav {
   display: none;
 }
@@ -116,7 +118,7 @@ header > .top-section {
   justify-content: space-between;
   padding: 20px 0px 15px 0px;
 }
-#logo {
+#logoSpaceX {
   width: 130px;
   height: auto;
   align-self: flex-end;
@@ -134,6 +136,7 @@ header > .top-section {
   grid-row: 2;
   padding: 0px 30px;
 }
+/* statistieken voor mobiel */
 .grid-section-one > .statistieken {
   display: flex;
   justify-content: space-around;
@@ -154,7 +157,6 @@ header > .top-section {
   text-align: center;
   padding-top: 0px;
   margin: 7px 0px;
-
   max-width: 33.33%;
 }
 .statTitels {
@@ -168,10 +170,11 @@ header > .top-section {
   margin-bottom: 0px;
 }
 
-/*///// SECTION-ONE TABLET /////*/
+/* statistieken voor landscape tablet, zichtbaar vanaf 920px */
 .statistiekenTablet {
   display: none;
 }
+
 
 /*///// SECTION-TWO /////*/
 .grid-section-two {
@@ -218,14 +221,16 @@ header > .top-section {
 .grid-section-four > .charts > .chartTop{
   margin-bottom: 35px;
 }
-.img-statusbar {
-  margin: 30px;
-  max-width: 80%;
-  height: auto;
-}
+/* pie chart */
 .pieChartContent {
   display: flex;
   flex-direction: column;
+}
+/* statusbars */
+#img-statusbar {
+  margin: 30px;
+  max-width: 80%;
+  height: auto;
 }
 
 
@@ -303,17 +308,6 @@ header > .top-section {
   .charts {
     padding: 4vw 3.5vw 3vw 3.5vw;
   }
-  .grid-section-two {
-    grid-column: 1/7;
-    grid-row: 3;
-    padding-right: 15px;
-  }
-  .grid-section-three {
-    grid-column: 7/13;
-    grid-row: 3;
-    margin-top: 0px;
-    padding-left: 15px;
-  }
   .chartBtn {
     padding: 0.5vw 2.0vw;
     font-size: 1.2vw;
@@ -325,10 +319,46 @@ header > .top-section {
   .chartTopTitleTwo {
     font-size: 2vw;
   }
-  .statistieken {
+
+  /* SECTION-ONE */
+  .grid-section-one > .statistieken {
+    padding: 0.5vw;
     height: 100px;
   }
+  .statTitels {
+    font-size: 1.5vw;
+  }
+  .statNumbers {
+    font-size: 2.5vw;
+  }
 
+  /* SECTION-TWO */
+  .grid-section-two {
+    grid-column: 1/7;
+    grid-row: 3;
+    padding-right: 15px;
+  }
+
+  /* SECTION-THREE */
+  .grid-section-three {
+    grid-column: 7/13;
+    grid-row: 3;
+    margin-top: 0px;
+    padding-left: 15px;
+  }
+
+  /* SECTION-FOUR */
+  .grid-section-four {
+    grid-column: 1/13;
+    grid-row: 4;
+  }
+  .pieChartContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+  }
   #myPieChart {
     width: 50%;
     display: block;
@@ -340,23 +370,16 @@ header > .top-section {
     display: block;
     float: right;
   }
-  .pieChartContent {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    width: 50%;
-  }
-  .grid-section-four {
-    grid-column: 1/13;
-    grid-row: 4;
-  }
+
+  /* SECTION-FIVE */
   .grid-section-five {
     grid-column: 1/9;
     grid-row: 5;
     padding-right: 15px;
     margin-bottom: 30px;
   }
+
+  /* SECTION-SIX */
   .grid-section-six {
     grid-column: 9/13;
     grid-row: 5;
@@ -380,28 +403,19 @@ header > .top-section {
   .statusChart:last-child {
     margin-top: 60px;
   }
-
-  .grid-section-one > .statistieken {
-    padding: 0.5vw;
-  }
-  .statTitels {
-    font-size: 1.5vw;
-  }
-  .statNumbers {
-    font-size: 2.5vw;
-  }
 }
 
 @media only screen and (min-width: 720px) {
-  .mobileNav {
-    display: none;
-  }
-  .footer > p {
-    margin-bottom: 0px;
-  }
   .grid-container {
     grid-template-columns: 55px auto auto auto auto auto auto auto;
   }
+
+  /* MENU */
+  /* mobiele navigatie */
+  .mobileNav {
+    display: none;
+  }
+  /* tablet navigatie */
   .tabletNav {
     display: block;
     grid-column: 1/2;
@@ -421,11 +435,15 @@ header > .top-section {
     position: fixed;
     margin-top: 28px;
   }
+  .fixedtabletNav > figure {
+    margin: 0px;
+  }
   .tableticon {
     display: block;
     margin: 0 auto;
     width: 16px;
     margin-bottom: 30px;
+    cursor: pointer;
   }
   .tableticon:last-child {
     width: 18.5px;
@@ -438,10 +456,12 @@ header > .top-section {
     width: 16.5px;
   }
 
+  /* SECTION-TOP */
   header {
     grid-column: 2/13;
     grid-row: 1;
   }
+
   .grid-section-one {
     grid-column: 2/13;
     grid-row: 2;
@@ -477,9 +497,22 @@ header > .top-section {
     grid-row: 6;
     background-color: #172B4D;
   }
+  .footer > p {
+    margin-bottom: 0px;
+  }
 }
 
 @media only screen and (min-width: 920px) {
+  .chartTopTitleOne {
+    font-size: 1.2vw;
+  }
+  .chartTopTitleTwo {
+    font-size: 1.8vw;
+    padding-top: 10px;
+    display: block;
+  }
+
+  /* SECTION-ONE  */
   .grid-section-one > .statistieken {
     display: none;
   }
@@ -520,20 +553,4 @@ header > .top-section {
     text-align: left;
     font-size: 1.3vw;
   }
-
-  .chartTopTitleOne {
-    font-size: 1.2vw;
-  }
-  .chartTopTitleTwo {
-    font-size: 1.8vw;
-    padding-top: 10px;
-    display: block;
-  }
 }
-
-/*
-@media only screen and (min-width: 1200px) {
-  .grid-container {
-    grid-template-columns: 200px auto auto auto auto auto auto auto;
-  }
-} */

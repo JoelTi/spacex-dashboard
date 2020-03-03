@@ -5,48 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="robots" content="noindex, nofollow">
+
     <title>Dasboard - Algemeen</title>
+
     <link rel="stylesheet" href="css/index.css" type="text/css">
     <link rel="icon" href="img/favicon.png" type="image/x-icon">
+
     <script src="https://kit.fontawesome.com/12eab69bfc.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
   </head>
   <body>
 
     <!-- MENU -->
+    <!-- mobiele navigatie -->
     <nav class="mobileNav">
       <div class="nav">
         <div class="navItem">
-          <img src="img/menu-icon1.png" id="icon1" alt="">
+          <figure>
+            <img src="img/menu-icon1.png" id="icon1" alt="menu button statistieken" />
+          </figure>
         </div>
         <div class="navItem">
-          <img src="img/menu-icon2.png" id="icon2" alt="">
+          <figure>
+            <img src="img/menu-icon2.png" id="icon2" alt="menu button" />
+          </figure>
         </div>
         <div class="navItem">
-          <img src="img/menu-icon.png" id="icon" alt="">
+          <figure>
+            <img src="img/menu-icon.png" id="icon" alt="menu button uitklapbaar" />
+          </figure>
         </div>
         <div class="navItem">
-          <img src="img/menu-icon3.png" id="icon3" alt="">
+          <figure>
+            <img src="img/menu-icon3.png" id="icon3" alt="menu button persoonlijk account" />
+          </figure>
         </div>
         <div class="navItem">
-          <img src="img/menu-icon4.png" id="icon4" alt="">
+          <figure>
+            <img src="img/menu-icon4.png" id="icon4" alt="menu button zoeken" />
+          </figure>
         </div>
       </div>
     </nav>
 
     <section class="grid-container">
+
+      <!-- tablet navigatie -->
       <nav class="tabletNav">
         <div class="tabletNavItems">
           <div class="fixedtabletNav">
-            <img src="img/menubar3.png" id="tabletMenuIcon" class="tableticon" alt="">
-            <img src="img/navicon1.jpg" class="tableticon" id="selectedIcon" alt="">
-            <img src="img/navicon2.jpg" class="tableticon" alt="">
-            <img src="img/navicon3.jpg" class="tableticon" alt="">
-            <img src="img/navicon4.jpg" class="tableticon" alt="">
-            <img src="img/navicon5.jpg" class="tableticon" alt="">
-            <img src="img/navicon6.jpg" class="tableticon" alt="">
-            <img src="img/navicon7.jpg" class="tableticon" alt="">
-            <img src="img/navicon8.jpg" class="tableticon" alt="">
+            <figure>
+              <img src="img/menubar3.png" id="tabletMenuIcon" class="tableticon" alt="menubar" />
+              <img src="img/navicon1.jpg" class="tableticon" id="selectedIcon" alt="algemeen" title="algemeen" />
+              <img src="img/navicon2.jpg" class="tableticon" alt="voertuig informatie" title="voertuig informatie" />
+              <img src="img/navicon3.jpg" class="tableticon" alt="voertuig omgeving" title="voertuig omgeving" />
+              <img src="img/navicon4.jpg" class="tableticon" alt="voorraden" title="voorraden" />
+              <img src="img/navicon5.jpg" class="tableticon" alt="tools" title="tools" />
+              <img src="img/navicon6.jpg" class="tableticon" alt="berichten" title="berichten" />
+              <img src="img/navicon7.jpg" class="tableticon" alt="inbox" title="inbox" />
+              <img src="img/navicon8.jpg" class="tableticon" alt="instellingen" title="instellingen" />
+            </figure>
           </div>
         </div>
       </nav>
@@ -54,7 +72,7 @@
       <!-- SECTION-TOP -->
       <header>
         <div class="top-section">
-          <img id="logo" src="img/spacex3.png" alt="logo spaceX">
+          <img id="logoSpaceX" src="img/spacex3.png" alt="logo spaceX" />
           <div class="menu-icons">
             <i class="far fa-bell fa-lg"></i>
             <i class="far fa-question-circle fa-lg"></i>
@@ -65,164 +83,169 @@
       </header> <!--einde section-menu/ header-->
 
       <!-- SECTION-ONE -->
-        <section class="grid-section-one">
-          <div class="statistieken">
-            <!-- lancering -->
-            <div class="stat">
+      <section class="grid-section-one">
+        <!-- statistieken voor mobiel -->
+        <div class="statistieken">
+          <!-- lancering -->
+          <div class="stat">
+            <span class="statTitels">SEC. TOT LANCERING</span>
+            <p class="statNumbers" id="demo"></p>
+          </div>
+          <!-- temperatuur -->
+          <div class="stat">
+            <span class="statTitels">TEMP. OP MARS</span>
+            <p class="statNumbers">-60°C</p>
+          </div>
+          <!-- afstand -->
+          <div class="stat">
+            <span class="statTitels">AFST. TOT MARS</span>
+            <p class="statNumbers">55,8 mjn km</p>
+          </div>
+        </div>
+
+        <!-- statistieken voor landscape tablet -->
+        <div class="statistiekenTablet">
+          <!-- lancering -->
+          <div class="statTablet">
+            <div>
               <span class="statTitels">SEC. TOT LANCERING</span>
-              <p class="statNumbers" id="demo"></p>
+              <p class="statNumbers" id="demoTablet"></p>
             </div>
-            <!-- temperatuur -->
-            <div class="stat">
+            <img src="img/staticon1.png" alt="" />
+          </div>
+          <!-- temperatuur -->
+          <div class="statTablet">
+            <div>
               <span class="statTitels">TEMP. OP MARS</span>
               <p class="statNumbers">-60°C</p>
             </div>
-            <!-- afstand -->
-            <div class="stat">
+            <img src="img/staticon2.png" alt="" />
+          </div>
+          <!-- afstand -->
+          <div class="statTablet">
+            <div>
               <span class="statTitels">AFST. TOT MARS</span>
               <p class="statNumbers">55,8 mjn km</p>
             </div>
+            <img src="img/staticon3.png" alt="" />
           </div>
+        </div>
+      </section>
 
-          <div class="statistiekenTablet">
-            <!-- lancering -->
-            <div class="statTablet">
-              <div>
-                <span class="statTitels">SEC. TOT LANCERING</span>
-                <p class="statNumbers" id="demoTablet"></p>
-              </div>
-              <img src="img/staticon1.png" alt="">
-            </div>
-            <!-- temperatuur -->
-            <div class="statTablet">
-              <div>
-                <span class="statTitels">TEMP. OP MARS</span>
-                <p class="statNumbers">-60°C</p>
-              </div>
-              <img src="img/staticon2.png" alt="">
-            </div>
-            <!-- afstand -->
-            <div class="statTablet">
-              <div>
-                <span class="statTitels">AFST. TOT MARS</span>
-                <p class="statNumbers">55,8 mjn km</p>
-              </div>
-              <img src="img/staticon3.png" alt="">
-            </div>
-          </div>
-        </section>
-
-        <!-- SECTION-TWO -->
-        <section class="grid-section-two">
-          <div class="charts">
-            <!-- titel en buttons -->
-            <div class="chartTop">
-              <!-- titel -->
-              <div class="chartTopTitle">
-                <span class="chartTopTitleOne">Voertuig informatie</span><br />
-                <span class="chartTopTitleTwo">Cabinetemperatuur (°C)</span>
-              </div>
-              <!-- buttons -->
-              <div class="chartBtns">
-                <a class="chartBtn" id="lineChartTopBtnOne" type="button" name="button">°C</a>
-                <a class="chartBtn" id="lineChartTopBtnTwo" type="button" name="button">°F</a>
-              </div>
-            </div>
-            <!-- grafiek -->
-            <canvas id="myLineChart"></canvas>
-            <div class="chartInfo" id="lineChartInfo">
-              <i class="fas fa-info-circle fa-lg"></i>
-              <span>Bij een hoge cabinetemperatuur raden wij aan vooral rustig te blijven!</span>
-            </div>
-          </div>
-        </section>
-
-        <!-- SECTION-THREE -->
-        <section class="grid-section-three">
-          <div class="charts">
+      <!-- SECTION-TWO -->
+      <section class="grid-section-two">
+        <div class="charts">
+          <!-- titel en buttons -->
+          <div class="chartTop">
             <!-- titel -->
-            <div class="chartTop">
-              <!-- titel -->
-              <div class="chartTopTitle">
-                <span class="chartTopTitleOne">Voertuig informatie</span><br />
-                <span class="chartTopTitleTwo">Hoeveelheid brandstof (L)</span>
-              </div>
+            <div class="chartTopTitle">
+              <span class="chartTopTitleOne">Voertuig informatie</span><br />
+              <span class="chartTopTitleTwo">Cabinetemperatuur (°C)</span>
             </div>
-            <!-- grafiek -->
-            <canvas id="myBarChart"></canvas>
+            <!-- buttons -->
+            <div class="chartBtns">
+              <a class="chartBtn" id="lineChartTopBtnOne" type="button" name="button">°C</a>
+              <a class="chartBtn" id="lineChartTopBtnTwo" type="button" name="button">°F</a>
+            </div>
           </div>
-        </section>
+          <!-- line chart -->
+          <canvas id="myLineChart"></canvas>
+          <!-- informatie -->
+          <div class="chartInfo" id="lineChartInfo">
+            <i class="fas fa-info-circle fa-lg"></i>
+            <span>Bij een hoge cabinetemperatuur raden wij aan vooral rustig te blijven!</span>
+          </div>
+        </div>
+      </section>
 
-        <!-- SECTION-FOUR -->
-        <section class="grid-section-four">
-          <div class="charts">
+      <!-- SECTION-THREE -->
+      <section class="grid-section-three">
+        <div class="charts">
+          <!-- titel -->
+          <div class="chartTop">
             <!-- titel -->
-            <div class="chartTop">
-              <!-- titel -->
-              <div class="chartTopTitle">
-                <span class="chartTopTitleOne">Voertuig omgeving</span><br />
-                <span class="chartTopTitleTwo">Zwaartekracht per planeet</span>
-              </div>
-            </div>
-            <!-- grafiek -->
-            <div class="pieChartContent">
-              <canvas id="myPieChart"></canvas>
-              <img class="img-statusbar" align="middle" src="img/statusbar.jpg" alt="" >
+            <div class="chartTopTitle">
+              <span class="chartTopTitleOne">Voertuig informatie</span><br />
+              <span class="chartTopTitleTwo">Hoeveelheid brandstof (L)</span>
             </div>
           </div>
-        </section>
+          <!-- bar chart -->
+          <canvas id="myBarChart"></canvas>
+        </div>
+      </section>
 
-        <!-- SECTION-FIVE -->
-        <section class="grid-section-five">
-          <div class="charts">
-            <!-- titel en buttons -->
-            <div class="chartTop">
-              <!-- titel -->
-              <div class="chartTopTitle">
-                <span class="chartTopTitleOne">Voertuig informatie</span><br />
-                <span class="chartTopTitleTwo">Snelheid ruimtevaartuig <br />(km/uur)</span>
-              </div>
-              <!-- buttons -->
-              <div>
-                <a class="chartBtn" id="scatterChartTopBtnOne" type="button" name="button">kmp</a>
-                <a class="chartBtn" id="scatterChartTopBtnTwo" type="button" name="button">mph</a>
-              </div>
-            </div>
-            <!-- grafiek -->
-            <canvas id="myScatterChart"></canvas>
-            <div class="chartInfo" id="scatterChartInfo">
-              <i class="fas fa-info-circle fa-lg"></i>
-              <span>Houd u goed vast bij de lancering, de snelheid neemt daar flink toe. U kan dan rond de 5G ervaren. </span>
-            </div>
-          </div>
-        </section>
-
-        <!-- SECTION-SIX -->
-        <section class="grid-section-six">
-          <div class="charts">
+      <!-- SECTION-FOUR -->
+      <section class="grid-section-four">
+        <div class="charts">
+          <!-- titel -->
+          <div class="chartTop">
             <!-- titel -->
-            <div class="chartTop" id="statusChartTop">
-              <div class="chartTopTitle">
-                <span class="chartTopTitleOne">Tools</span><br />
-                <span class="chartTopTitleTwo">Voedsel- en watervoorraad</span>
-              </div>
-            </div>
-            <!-- grafiek -->
-            <div class="statusCharts">
-              <div class="statusChart">
-                <canvas id="myStatusChartOne"></canvas>
-              </div>
-              <div class="statusChart">
-                <canvas id="myStatusChartTwo"></canvas>
-              </div>
-            </div>
-            <div class="chartInfo" id="statusChartInfo">
-              <i class="fas fa-info-circle fa-lg"></i>
-              <span>De watervoorraad wordt automatisch aangevuld door het zuiveren van urine.</span>
+            <div class="chartTopTitle">
+              <span class="chartTopTitleOne">Voertuig omgeving</span><br />
+              <span class="chartTopTitleTwo">Zwaartekracht per planeet</span>
             </div>
           </div>
-        </section>
+          <div class="pieChartContent">
+            <!-- pie chart -->
+            <canvas id="myPieChart"></canvas>
+            <!-- statusbars -->
+            <img id="img-statusbar" src="img/statusbar.jpg" alt="zwaartekracht per planeet" >
+          </div>
+        </div>
+      </section>
 
+      <!-- SECTION-FIVE -->
+      <section class="grid-section-five">
+        <div class="charts">
+          <!-- titel en buttons -->
+          <div class="chartTop">
+            <!-- titel -->
+            <div class="chartTopTitle">
+              <span class="chartTopTitleOne">Voertuig informatie</span><br />
+              <span class="chartTopTitleTwo">Snelheid ruimtevaartuig <br />(km/uur)</span>
+            </div>
+            <!-- buttons -->
+            <div>
+              <a class="chartBtn" id="scatterChartTopBtnOne" type="button" name="button">kmp</a>
+              <a class="chartBtn" id="scatterChartTopBtnTwo" type="button" name="button">mph</a>
+            </div>
+          </div>
+          <!-- scatter chart -->
+          <canvas id="myScatterChart"></canvas>
+          <!-- informatie -->
+          <div class="chartInfo" id="scatterChartInfo">
+            <i class="fas fa-info-circle fa-lg"></i>
+            <span>Houd u goed vast bij de lancering, de snelheid neemt daar flink toe. U kan dan rond de 5G ervaren. </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION-SIX -->
+      <section class="grid-section-six">
+        <div class="charts">
+          <!-- titel -->
+          <div class="chartTop" id="statusChartTop">
+            <div class="chartTopTitle">
+              <span class="chartTopTitleOne">Tools</span><br />
+              <span class="chartTopTitleTwo">Voedsel- en watervoorraad</span>
+            </div>
+          </div>
+          <!-- status chart -->
+          <div class="statusCharts">
+            <div class="statusChart">
+              <canvas id="myStatusChartOne"></canvas>
+            </div>
+            <div class="statusChart">
+              <canvas id="myStatusChartTwo"></canvas>
+            </div>
+          </div>
+          <!-- informatie -->
+          <div class="chartInfo" id="statusChartInfo">
+            <i class="fas fa-info-circle fa-lg"></i>
+            <span>De watervoorraad wordt automatisch aangevuld door het zuiveren van urine.</span>
+          </div>
+        </div>
+      </section>
 
       <!-- SECTION-FOOTER -->
       <footer class="footer">
@@ -231,6 +254,7 @@
           <small>In opdracht van de HHS - SpaceX - Challenge 1</small>
         </p>
       </footer>
+
     </section>
 
     <!-- javascriptlink voor charts -->

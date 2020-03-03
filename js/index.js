@@ -329,7 +329,7 @@ var countDownDate = new Date("Jan 10, 2021 12:00:00").getTime();
 var x = setInterval(function() {
   var now = new Date().getTime();
   var distance = countDownDate - now;
-  var seconds = Math.floor((distance % (1000 * 60 * 60 * 60)) / 1000);
+  var seconds = Math.floor((distance % (1000 * 60 * 24 * 60 * 60)) / 1000);
 
   document.getElementById("demo").innerHTML = seconds + "s ";
 
@@ -348,7 +348,7 @@ var countDownDate = new Date("Jan 10, 2021 12:00:00").getTime();
 var x = setInterval(function() {
   var now = new Date().getTime();
   var distance = countDownDate - now;
-  var seconds = Math.floor((distance % (1000 * 60 * 60 * 60)) / 1000);
+  var seconds = Math.floor((distance % (1000 * 60 * 24 * 60 * 60)) / 1000);
 
   document.getElementById("demoTablet").innerHTML = seconds + "s ";
 
